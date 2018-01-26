@@ -1,0 +1,546 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A42FD454201B8CA9008612CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42FD453201B8CA9008612CF /* AppDelegate.swift */; };
+		A42FD456201B8CA9008612CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42FD455201B8CA9008612CF /* ViewController.swift */; };
+		A42FD458201B8CA9008612CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A42FD457201B8CA9008612CF /* Assets.xcassets */; };
+		A42FD45B201B8CAA008612CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A42FD459201B8CA9008612CF /* Main.storyboard */; };
+		A42FD466201B8CAA008612CF /* Discord_LettersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42FD465201B8CAA008612CF /* Discord_LettersTests.swift */; };
+		A42FD471201B8CAA008612CF /* Discord_LettersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42FD470201B8CAA008612CF /* Discord_LettersUITests.swift */; };
+		A42FD47F201B92D3008612CF /* Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42FD47E201B92D3008612CF /* Converter.swift */; };
+		A42FD481201B9BD5008612CF /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42FD480201B9BD5008612CF /* TextField.swift */; };
+		A42FD485201BB945008612CF /* UpdateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42FD484201BB945008612CF /* UpdateManager.swift */; };
+		A42FD487201BBBB2008612CF /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42FD486201BBBB2008612CF /* NetworkRequest.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A42FD462201B8CAA008612CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A42FD448201B8CA9008612CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A42FD44F201B8CA9008612CF;
+			remoteInfo = "Discord Letters";
+		};
+		A42FD46D201B8CAA008612CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A42FD448201B8CA9008612CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A42FD44F201B8CA9008612CF;
+			remoteInfo = "Discord Letters";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A42FD450201B8CA9008612CF /* Discord Letters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Discord Letters.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A42FD453201B8CA9008612CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A42FD455201B8CA9008612CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A42FD457201B8CA9008612CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A42FD45A201B8CA9008612CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A42FD45C201B8CAA008612CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A42FD461201B8CAA008612CF /* Discord LettersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Discord LettersTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A42FD465201B8CAA008612CF /* Discord_LettersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discord_LettersTests.swift; sourceTree = "<group>"; };
+		A42FD467201B8CAA008612CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A42FD46C201B8CAA008612CF /* Discord LettersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Discord LettersUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A42FD470201B8CAA008612CF /* Discord_LettersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discord_LettersUITests.swift; sourceTree = "<group>"; };
+		A42FD472201B8CAA008612CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A42FD47E201B92D3008612CF /* Converter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Converter.swift; sourceTree = "<group>"; };
+		A42FD480201B9BD5008612CF /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		A42FD484201BB945008612CF /* UpdateManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateManager.swift; sourceTree = "<group>"; };
+		A42FD486201BBBB2008612CF /* NetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A42FD44D201B8CA9008612CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A42FD45E201B8CAA008612CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A42FD469201B8CAA008612CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A42FD447201B8CA9008612CF = {
+			isa = PBXGroup;
+			children = (
+				A42FD452201B8CA9008612CF /* Discord Letters */,
+				A42FD464201B8CAA008612CF /* Discord LettersTests */,
+				A42FD46F201B8CAA008612CF /* Discord LettersUITests */,
+				A42FD451201B8CA9008612CF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A42FD451201B8CA9008612CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A42FD450201B8CA9008612CF /* Discord Letters.app */,
+				A42FD461201B8CAA008612CF /* Discord LettersTests.xctest */,
+				A42FD46C201B8CAA008612CF /* Discord LettersUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A42FD452201B8CA9008612CF /* Discord Letters */ = {
+			isa = PBXGroup;
+			children = (
+				A42FD453201B8CA9008612CF /* AppDelegate.swift */,
+				A42FD455201B8CA9008612CF /* ViewController.swift */,
+				A42FD457201B8CA9008612CF /* Assets.xcassets */,
+				A42FD459201B8CA9008612CF /* Main.storyboard */,
+				A42FD45C201B8CAA008612CF /* Info.plist */,
+				A42FD47E201B92D3008612CF /* Converter.swift */,
+				A42FD480201B9BD5008612CF /* TextField.swift */,
+				A42FD484201BB945008612CF /* UpdateManager.swift */,
+				A42FD486201BBBB2008612CF /* NetworkRequest.swift */,
+			);
+			path = "Discord Letters";
+			sourceTree = "<group>";
+		};
+		A42FD464201B8CAA008612CF /* Discord LettersTests */ = {
+			isa = PBXGroup;
+			children = (
+				A42FD465201B8CAA008612CF /* Discord_LettersTests.swift */,
+				A42FD467201B8CAA008612CF /* Info.plist */,
+			);
+			path = "Discord LettersTests";
+			sourceTree = "<group>";
+		};
+		A42FD46F201B8CAA008612CF /* Discord LettersUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A42FD470201B8CAA008612CF /* Discord_LettersUITests.swift */,
+				A42FD472201B8CAA008612CF /* Info.plist */,
+			);
+			path = "Discord LettersUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A42FD44F201B8CA9008612CF /* Discord Letters */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A42FD475201B8CAA008612CF /* Build configuration list for PBXNativeTarget "Discord Letters" */;
+			buildPhases = (
+				A42FD44C201B8CA9008612CF /* Sources */,
+				A42FD44D201B8CA9008612CF /* Frameworks */,
+				A42FD44E201B8CA9008612CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Discord Letters";
+			productName = "Discord Letters";
+			productReference = A42FD450201B8CA9008612CF /* Discord Letters.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A42FD460201B8CAA008612CF /* Discord LettersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A42FD478201B8CAA008612CF /* Build configuration list for PBXNativeTarget "Discord LettersTests" */;
+			buildPhases = (
+				A42FD45D201B8CAA008612CF /* Sources */,
+				A42FD45E201B8CAA008612CF /* Frameworks */,
+				A42FD45F201B8CAA008612CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A42FD463201B8CAA008612CF /* PBXTargetDependency */,
+			);
+			name = "Discord LettersTests";
+			productName = "Discord LettersTests";
+			productReference = A42FD461201B8CAA008612CF /* Discord LettersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A42FD46B201B8CAA008612CF /* Discord LettersUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A42FD47B201B8CAA008612CF /* Build configuration list for PBXNativeTarget "Discord LettersUITests" */;
+			buildPhases = (
+				A42FD468201B8CAA008612CF /* Sources */,
+				A42FD469201B8CAA008612CF /* Frameworks */,
+				A42FD46A201B8CAA008612CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A42FD46E201B8CAA008612CF /* PBXTargetDependency */,
+			);
+			name = "Discord LettersUITests";
+			productName = "Discord LettersUITests";
+			productReference = A42FD46C201B8CAA008612CF /* Discord LettersUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A42FD448201B8CA9008612CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Guðmundur Halldórsson";
+				TargetAttributes = {
+					A42FD44F201B8CA9008612CF = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 2Z8E5X734X;
+						ProvisioningStyle = Automatic;
+					};
+					A42FD460201B8CAA008612CF = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 2Z8E5X734X;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A42FD44F201B8CA9008612CF;
+					};
+					A42FD46B201B8CAA008612CF = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 2Z8E5X734X;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A42FD44F201B8CA9008612CF;
+					};
+				};
+			};
+			buildConfigurationList = A42FD44B201B8CA9008612CF /* Build configuration list for PBXProject "Discord Letters" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A42FD447201B8CA9008612CF;
+			productRefGroup = A42FD451201B8CA9008612CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A42FD44F201B8CA9008612CF /* Discord Letters */,
+				A42FD460201B8CAA008612CF /* Discord LettersTests */,
+				A42FD46B201B8CAA008612CF /* Discord LettersUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A42FD44E201B8CA9008612CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A42FD458201B8CA9008612CF /* Assets.xcassets in Resources */,
+				A42FD45B201B8CAA008612CF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A42FD45F201B8CAA008612CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A42FD46A201B8CAA008612CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A42FD44C201B8CA9008612CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A42FD456201B8CA9008612CF /* ViewController.swift in Sources */,
+				A42FD47F201B92D3008612CF /* Converter.swift in Sources */,
+				A42FD454201B8CA9008612CF /* AppDelegate.swift in Sources */,
+				A42FD485201BB945008612CF /* UpdateManager.swift in Sources */,
+				A42FD487201BBBB2008612CF /* NetworkRequest.swift in Sources */,
+				A42FD481201B9BD5008612CF /* TextField.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A42FD45D201B8CAA008612CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A42FD466201B8CAA008612CF /* Discord_LettersTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A42FD468201B8CAA008612CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A42FD471201B8CAA008612CF /* Discord_LettersUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A42FD463201B8CAA008612CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A42FD44F201B8CA9008612CF /* Discord Letters */;
+			targetProxy = A42FD462201B8CAA008612CF /* PBXContainerItemProxy */;
+		};
+		A42FD46E201B8CAA008612CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A42FD44F201B8CA9008612CF /* Discord Letters */;
+			targetProxy = A42FD46D201B8CAA008612CF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A42FD459201B8CA9008612CF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A42FD45A201B8CA9008612CF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A42FD473201B8CAA008612CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A42FD474201B8CAA008612CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		A42FD476201B8CAA008612CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2Z8E5X734X;
+				INFOPLIST_FILE = "Discord Letters/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gudmunduro.Discord-Letters";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A42FD477201B8CAA008612CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2Z8E5X734X;
+				INFOPLIST_FILE = "Discord Letters/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gudmunduro.Discord-Letters";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		A42FD479201B8CAA008612CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2Z8E5X734X;
+				INFOPLIST_FILE = "Discord LettersTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gudmunduro.Discord-LettersTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Discord Letters.app/Contents/MacOS/Discord Letters";
+			};
+			name = Debug;
+		};
+		A42FD47A201B8CAA008612CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2Z8E5X734X;
+				INFOPLIST_FILE = "Discord LettersTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gudmunduro.Discord-LettersTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Discord Letters.app/Contents/MacOS/Discord Letters";
+			};
+			name = Release;
+		};
+		A42FD47C201B8CAA008612CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2Z8E5X734X;
+				INFOPLIST_FILE = "Discord LettersUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gudmunduro.Discord-LettersUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Discord Letters";
+			};
+			name = Debug;
+		};
+		A42FD47D201B8CAA008612CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2Z8E5X734X;
+				INFOPLIST_FILE = "Discord LettersUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gudmunduro.Discord-LettersUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Discord Letters";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A42FD44B201B8CA9008612CF /* Build configuration list for PBXProject "Discord Letters" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A42FD473201B8CAA008612CF /* Debug */,
+				A42FD474201B8CAA008612CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A42FD475201B8CAA008612CF /* Build configuration list for PBXNativeTarget "Discord Letters" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A42FD476201B8CAA008612CF /* Debug */,
+				A42FD477201B8CAA008612CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A42FD478201B8CAA008612CF /* Build configuration list for PBXNativeTarget "Discord LettersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A42FD479201B8CAA008612CF /* Debug */,
+				A42FD47A201B8CAA008612CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A42FD47B201B8CAA008612CF /* Build configuration list for PBXNativeTarget "Discord LettersUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A42FD47C201B8CAA008612CF /* Debug */,
+				A42FD47D201B8CAA008612CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A42FD448201B8CA9008612CF /* Project object */;
+}
