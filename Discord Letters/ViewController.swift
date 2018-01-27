@@ -50,7 +50,9 @@ class ViewController: NSViewController, NSTextFieldDelegate {
     }
     
     @IBAction func onCopyButtonClick(_ sender: Any) {
-        
+        let pasteboard = NSPasteboard.general()
+        pasteboard.declareTypes([NSPasteboardTypeString], owner: nil)
+        pasteboard.setString(self.outputTextField.text, forType: NSPasteboardTypeString)
     }
     
     @IBAction func onClearAllButtonClick(_ sender: Any) {

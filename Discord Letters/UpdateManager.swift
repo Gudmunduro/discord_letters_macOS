@@ -81,7 +81,8 @@ class UpdateManager: NSObject, NSUserNotificationCenterDelegate {
     func userNotificationCenter(_ center: NSUserNotificationCenter, didActivate notification: NSUserNotification) {
         switch notification.activationType {
         case .actionButtonClicked:
-            print("!")
+            let url = URL(string: "https://files.gudmunduro.com/discord_letters/discord_letters.zip")
+            NSWorkspace.shared().open(url!)
         default: break
         }
     }
