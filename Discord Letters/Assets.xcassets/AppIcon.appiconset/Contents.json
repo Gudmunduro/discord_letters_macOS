@@ -1,28 +1,33 @@
 {
   "images" : [
     {
-      "idiom" : "mac",
       "size" : "16x16",
+      "idiom" : "mac",
+      "filename" : "e7fb1e40ff594dbefa05cd6f35d6630c.png_16x16.png",
       "scale" : "1x"
     },
     {
-      "idiom" : "mac",
       "size" : "16x16",
+      "idiom" : "mac",
+      "filename" : "e7fb1e40ff594dbefa05cd6f35d6630c.png_16x16-1.png",
       "scale" : "2x"
     },
     {
-      "idiom" : "mac",
       "size" : "32x32",
+      "idiom" : "mac",
+      "filename" : "e7fb1e40ff594dbefa05cd6f35d6630c.png_32x32-1.png",
       "scale" : "1x"
     },
     {
-      "idiom" : "mac",
       "size" : "32x32",
+      "idiom" : "mac",
+      "filename" : "e7fb1e40ff594dbefa05cd6f35d6630c.png_32x32.png",
       "scale" : "2x"
     },
     {
-      "idiom" : "mac",
       "size" : "128x128",
+      "idiom" : "mac",
+      "filename" : "e7fb1e40ff594dbefa05cd6f35d6630c.png_128x128.png",
       "scale" : "1x"
     },
     {

@@ -22,9 +22,11 @@ class UpdateManager: NSObject, NSUserNotificationCenterDelegate {
     func showUpdateAvaibleNotification()
     {
         let notification = NSUserNotification()
-        notification.title = "Update"
+        notification.title = "Discord_letters"
         notification.informativeText = "Update available"
         notification.soundName = NSUserNotificationDefaultSoundName
+        notification.actionButtonTitle = "Update now"
+        notification.otherButtonTitle = "Later"
         NSUserNotificationCenter.default.deliver(notification)
     }
     
@@ -41,12 +43,9 @@ class UpdateManager: NSObject, NSUserNotificationCenterDelegate {
     
     func checkForUpdate(onLoad: ((Bool) -> Void)?)
     {
-        print("!")
         let rq = NetworkRequest(url: "version.php", params: "", onLoad: { data in
-            print("!!")
             do {
                 if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String:String] {
-                    print(json["version"])
                     if self.compareVersions(oldVersion: self.currentVersion, newVersion: json["version"]!) {
                         onLoad!(true)
                         return
@@ -64,8 +63,8 @@ class UpdateManager: NSObject, NSUserNotificationCenterDelegate {
     private func compareVersions(oldVersion: String, newVersion: String) -> Bool
     {
         let oldVersionNumbers = oldVersion.components(separatedBy: ".")
-        let newVersionNumbers = oldVersion.components(separatedBy: ".")
-        for i in 0...newVersionNumbers.count{
+        let newVersionNumbers = newVersion.components(separatedBy: ".")
+        for i in 0...newVersionNumbers.count - 1{
             if oldVersionNumbers.count < i {
                 return true
             }
@@ -77,6 +76,14 @@ class UpdateManager: NSObject, NSUserNotificationCenterDelegate {
             }
         }
         return false
+    }
+    
+    func userNotificationCenter(_ center: NSUserNotificationCenter, didActivate notification: NSUserNotification) {
+        switch notification.activationType {
+        case .actionButtonClicked:
+            print("!")
+        default: break
+        }
     }
     
     func userNotificationCenter(_ center: NSUserNotificationCenter,
